@@ -17,12 +17,9 @@ body {
 }
 
 .wrapper {
-    height: 1000px;
-    width: 1940px;
+    height: 100vh;
+    width: 100vw;
     background-color: hsl(185, 75%, 39%);
-    position: relative;
-    top: 12%;
-    left: 12%;
     overflow: hidden;
 }
 
@@ -33,15 +30,15 @@ body {
 .top {
     position: absolute;
     top: -50%;
-    left: -10%;
-    height: 60vh;
+    left: 0%;
+    height: 100vh;
 }
 
 .bottom {
     position: absolute;
     top: 50%;
-    left: 60%;
-    height: 50vh;
+    left: 50%;
+    height: 100vh;
 }
 
 .card-wrapper {
@@ -170,13 +167,23 @@ body {
 
 @media screen and (max-width: 1920px) {
     .wrapper {
-        height: 900px;
-        width: 1440px;
+        height: 100vh;
+        width: 100vw;
         background-color: hsl(185, 75%, 39%);
-        position: relative;
-        top: 8%;
-        left: 15%;
         overflow: hidden;
+    }
+    .top {
+        position: absolute;
+        top: -45%;
+        left: -10%;
+        height: 100vh;
+    }
+    
+    .bottom {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100vh;
     }
 }
 
