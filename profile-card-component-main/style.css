@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 1000px;
+    width: 1940px;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    top: 12%;
+    left: 12%;
+    overflow: hidden;
+}
+
+/* .background {
+    position: absolute;
+} */
+
+.top {
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    height: 60vh;
+}
+
+.bottom {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    height: 50vh;
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 550px;
+    width: 540px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);
+}
+
+.top-bg {
+    background-image: url(images/bg-pattern-card.svg);
+    height: 35%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top-bg::after {
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0px 0px 0px 80px #fff;
+}
+
+.avatar {
+    background-image: url(images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    width: 140px;
+    clip-path: circle(50% at center);
+    position: absolute;
+    left: 37%;
+    top: 21%;
+}
+
+.nameage-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 220px;
+    width: 100%;
+}
+
+.location {
+    font-size: 22px;
+}
+
+.nameage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+}
+
+.nameage h1 {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.nameage p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.stats {
+    height: 25%;
+    width: 100%;
+    border-top: 2px solid rgba(0,0,0,.2);
+    
+}
+
+.stats-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.likes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.followers h2,
+.likes h2,
+.photos h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.followers p,
+.likes p,
+.photos p {
+    color: gray;
+}
+
+@media screen and (max-width: 1920px) {
+    .wrapper {
+        height: 900px;
+        width: 1440px;
+        background-color: hsl(185, 75%, 39%);
+        position: relative;
+        top: 8%;
+        left: 15%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        height: 900px;
+        width: 375px;
+        background-color: hsl(185, 75%, 39%);
+        position: relative;
+        top: 0%;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .card-wrapper {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        height: 370px;
+        width: 320px;
+        background-color: white;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px black;
+        transform: translate(-50%, -50%);
+    }
+
+    .top {
+        position: absolute;
+        top: -20%;
+        left: -50%;
+        height: 60vh;
+    }
+    
+    .bottom {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        height: 50vh;
+    }
+
+    .top-bg::after {
+        content: "";
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        border-radius: 100%;
+        width: 2px;
+        height: 2px;
+        box-shadow: 0px 0px 0px 50px #fff;
+    }
+
+    .avatar {
+        background-image: url(images/image-victor.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 90px;
+        width: 90px;
+        clip-path: circle(50% at center);
+        position: absolute;
+        left: 36.5%;
+        top: 22%;
+    }
+    
+    .nameage-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+        width: 100%;
+    }
+
+    .location {
+        font-size: 16px;
+    }
+    
+    .nameage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        width: 100%;
+    }
+    
+    .nameage h1 {
+        font-weight: 700;
+        margin-right: 10px;
+        font-size: 28px;
+    }
+    
+    .nameage p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .stats {
+        height: 25%;
+        width: 100%;
+        border-top: 2px solid rgba(0,0,0,.2);
+        
+    }
+    
+    .stats-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .followers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .likes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .followers h2,
+    .likes h2,
+    .photos h2 {
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+}
