@@ -23,10 +23,6 @@ body {
     overflow: hidden;
 }
 
-/* .background {
-    position: absolute;
-} */
-
 .top {
     position: absolute;
     top: -50%;
